@@ -1,11 +1,17 @@
-function Book(title, author, year) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
+class Book {
+  title: string;
+  author: string;
+  year: number;
+
+  constructor(title: string, author: string, year: number) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
 }
 
-function displayBook(book) {
-  const bookList = document.getElementById("book-list");
+function displayBook(book: Book): void {
+  const bookList = document.getElementById("book-list") as HTMLElement;
   const bookDiv = document.createElement("div");
   bookDiv.innerHTML = `
     <h2>${book.title}</h2>
