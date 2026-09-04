@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/Phillip-mulindwa/react-dev-week1-activity#readme",
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "ts-loader": "^9.6.2",
+    "typescript": "^7.0.2",
+    "webpack": "^5.110.3",
+    "webpack-cli": "^7.2.3"
   }
 }
